@@ -1,0 +1,722 @@
+
+Claude finished the response
+You said: ده كود و تصميم لزرار اتصال
+ده كود و تصميم لزرار اتصال
+==========================
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #brxe-70f704 {
+    display: flex
+;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 46px;
+    color: #fff;
+    background-color: red;
+    margin: auto;
+}
+.animated-button {
+    position: relative;
+    overflow: hidden;
+    animation: pulse-shadow 2s infinite;
+}
+
+.call-sh  {
+      position: relative;
+      overflow: hidden;
+      animation: pulse-shadow 2s infinite;
+    }
+
+    @keyframes pulse-shadow {
+      0% {
+        box-shadow: 0 0 5px 10px rgba(168, 0, 0, 0.7), 0 0 0 10px rgba(168, 0, 0, 0.7);
+      }
+      40% {
+        box-shadow: 0 0 5px 20px rgba(168, 0, 0, 0.7), 0 0 0 20px rgba(168, 0, 0, 0.7);
+      }
+      100% {
+              box-shadow: 0 0 5px 10px rgba(168, 0, 0, 0.7), 0 0 0 10px rgba(168, 0, 0, 0.7);
+      }
+    }
+  </style>
+</head>
+<body>
+  <a href="tel:+966543064111">
+                <div id="brxe-70f704" class="brxe-div animated-button">
+                    <i id="brxe-2d252e" class="fas fa-phone brxe-icon"></i>
+                    <div id="brxe-910013" class="brxe-heading" >
+                    </div>
+                </div>
+            </a>
+</body>
+</html>
+=================
+انا عاوز اضيف بعض الاكشن
+اعملي ملف HTML CSS JS في ملف واحد
+ويكون في بوكس اكشن اغير كل الوان الزرار و الانيميشن 
+وسرعة الانيميشن اكون متحكم في كل حاجة
+
+وخلي خلفية السكشن اللي فيه الزرار بلون 
+#29457f والزرار في منتصف السكشن
+
+واعطني الكود
+ويكون متاح اني اعمل نسخ للالون اللي اخترتة من بوكس الاكشن
+
+Show more
+5:15 PM
+Claude responded: الملف جاهز!
+
+Viewed a file, created a file, read a file
+Viewed a file, created a file, read a file
+الملف جاهز! إليك ملخص بكل اللي فيه:
+
+السكشن العلوي — الزرار في المنتصف على خلفية 
+#29457f مع تأثير النبضة.
+
+لوحة التحكم تحتوي على:
+
+لون الزرار — color picker + إدخال HEX يدوي + 7 ألوان جاهزة + زرار نسخ اللون
+لون الظل (Glow) — نفس الإمكانيات مع تحديث فوري للأنيميشن
+سرعة الأنيميشن — من 0.5 ثانية لـ 5 ثواني
+حجم النبضة (Pulse) — تتحكم في مدى انتشار الـ glow
+حجم الزرار — من 60px لـ 160px
+حجم الأيقونة — من 16px لـ 80px
+كل تغيير بيتطبق فوري على الزرار، وزرار نسخ بيكوبي الـ HEX مع ظهور إشعار تأكيد.
+
+
+Call button
+Code · HTML 
+You said: وضيف ايكون اتصال باللون الابيض في منتصف الزرار مثال الصورة المرفقة
+1777213013347_image.png
+وضيف ايكون اتصال باللون الابيض في منتصف الزرار مثال الصورة المرفقة
+واعطني الكود كامل
+
+5:17 PM
+Claude responded: شايف الصورة - الأيقونة دي بتبان أكبر وأوضح في منتصف الزرار.
+شايف الصورة - الأيقونة دي بتبان أكبر وأوضح في منتصف الزرار. هعدل الكود:
+
+
+Edited 3 files, viewed a file
+Edited 3 files, viewed a file
+Now update the icon slider to control the SVG size:
+
+
+Edited a file, read a file
+Edited a file, read a file
+تم التعديل! الزرار دلوقتي بيحتوي على:
+
+دايرة داخلية شفافة بيضاء في المنتصف بالظبط زي الصورة
+أيقونة تليفون SVG بيضاء واضحة في وسط الدايرة الداخلية
+الأيقونة بتتكبر وتتصغر مع سلايدر حجم الأيقونة في لوحة التحكم
+كل التحكمات التانية شغالة زي ما هي
+
+Call button
+Code · HTML 
+
+Next time, try this in Cowork
+
+Hand off complex tasks for Claude to handle independently. Come back to finished results.
+
+
+
+
+Claude is AI and can make mistakes. Please double-check responses.
+Call button · HTML
+Copy
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>زرار الاتصال</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap');
+ 
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+ 
+    :root {
+      --btn-color: #cc0000;
+      --shadow-color: rgba(200, 0, 0, 0.6);
+      --anim-speed: 2s;
+      --btn-size: 100px;
+      --icon-size: 46px;
+      --pulse-min: 10px;
+      --pulse-max: 22px;
+    }
+ 
+    body {
+      font-family: 'Cairo', sans-serif;
+      background: #1a1a2e;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 32px;
+      padding: 24px;
+    }
+ 
+    /* ========== BUTTON SECTION ========== */
+    .button-section {
+      width: 100%;
+      max-width: 900px;
+      background: #29457f;
+      border-radius: 24px;
+      min-height: 260px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 8px 40px rgba(0,0,0,0.4);
+    }
+ 
+    .button-section::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at center, rgba(255,255,255,0.06) 0%, transparent 70%);
+      pointer-events: none;
+    }
+ 
+    .call-btn-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 14px;
+    }
+ 
+    .call-btn {
+      display: flex;
+      border-radius: 50%;
+      width: var(--btn-size);
+      height: var(--btn-size);
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      background-color: var(--btn-color);
+      text-decoration: none;
+      animation: pulse-shadow var(--anim-speed) infinite ease-in-out;
+      transition: background-color 0.3s, transform 0.2s;
+      position: relative;
+      z-index: 1;
+    }
+ 
+    /* Inner white circle */
+    .call-btn .inner-circle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 68%;
+      height: 68%;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.22);
+      transition: background 0.3s;
+      flex-shrink: 0;
+    }
+ 
+    .call-btn:hover .inner-circle {
+      background: rgba(255,255,255,0.32);
+    }
+ 
+    /* Phone SVG icon */
+    .call-btn .inner-circle svg {
+      width: var(--icon-size);
+      height: var(--icon-size);
+      fill: #ffffff;
+      filter: drop-shadow(0 1px 3px rgba(0,0,0,0.25));
+      transition: width 0.3s, height 0.3s;
+    }
+ 
+    .call-btn:hover { transform: scale(1.08); }
+    .call-btn:active { transform: scale(0.95); }
+ 
+    .call-label {
+      color: rgba(255,255,255,0.85);
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      text-align: center;
+    }
+ 
+    @keyframes pulse-shadow {
+      0%   { box-shadow: 0 0 5px var(--pulse-min) var(--shadow-color), 0 0 0 var(--pulse-min) var(--shadow-color); }
+      50%  { box-shadow: 0 0 5px var(--pulse-max) var(--shadow-color), 0 0 0 var(--pulse-max) var(--shadow-color); }
+      100% { box-shadow: 0 0 5px var(--pulse-min) var(--shadow-color), 0 0 0 var(--pulse-min) var(--shadow-color); }
+    }
+ 
+    /* ========== CONTROL PANEL ========== */
+    .control-panel {
+      width: 100%;
+      max-width: 900px;
+      background: #0f1a30;
+      border-radius: 24px;
+      padding: 28px 32px;
+      box-shadow: 0 8px 40px rgba(0,0,0,0.5);
+      border: 1px solid rgba(255,255,255,0.07);
+    }
+ 
+    .panel-title {
+      color: #fff;
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .panel-title i { color: #4a9eff; font-size: 16px; }
+ 
+    .controls-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+ 
+    .control-group {
+      background: rgba(255,255,255,0.04);
+      border-radius: 14px;
+      padding: 16px 18px;
+      border: 1px solid rgba(255,255,255,0.06);
+      transition: border-color 0.2s;
+    }
+    .control-group:hover { border-color: rgba(74,158,255,0.3); }
+ 
+    .control-label {
+      color: rgba(255,255,255,0.6);
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .control-label i { color: #4a9eff; font-size: 11px; }
+ 
+    /* Color picker row */
+    .color-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+ 
+    .color-picker-wrap {
+      position: relative;
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 2px solid rgba(255,255,255,0.15);
+      cursor: pointer;
+      flex-shrink: 0;
+      transition: border-color 0.2s;
+    }
+    .color-picker-wrap:hover { border-color: #4a9eff; }
+    .color-picker-wrap input[type="color"] {
+      position: absolute;
+      inset: -6px;
+      width: calc(100% + 12px);
+      height: calc(100% + 12px);
+      border: none;
+      outline: none;
+      cursor: pointer;
+      opacity: 1;
+    }
+ 
+    .hex-input {
+      flex: 1;
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 8px;
+      color: #fff;
+      font-family: 'Cairo', monospace;
+      font-size: 13px;
+      padding: 8px 12px;
+      outline: none;
+      transition: border-color 0.2s;
+      width: 100%;
+    }
+    .hex-input:focus { border-color: #4a9eff; }
+ 
+    .copy-btn {
+      background: rgba(74,158,255,0.15);
+      border: 1px solid rgba(74,158,255,0.3);
+      color: #4a9eff;
+      border-radius: 8px;
+      padding: 8px 12px;
+      cursor: pointer;
+      font-size: 12px;
+      font-family: 'Cairo', sans-serif;
+      transition: all 0.2s;
+      white-space: nowrap;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .copy-btn:hover { background: rgba(74,158,255,0.3); border-color: #4a9eff; }
+    .copy-btn.copied { background: rgba(34,197,94,0.2); border-color: #22c55e; color: #22c55e; }
+ 
+    /* Slider */
+    .slider-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+ 
+    .slider-wrap {
+      flex: 1;
+    }
+ 
+    input[type="range"] {
+      -webkit-appearance: none;
+      width: 100%;
+      height: 5px;
+      border-radius: 4px;
+      background: rgba(255,255,255,0.1);
+      outline: none;
+      cursor: pointer;
+    }
+    input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: #4a9eff;
+      cursor: pointer;
+      box-shadow: 0 0 6px rgba(74,158,255,0.5);
+      transition: transform 0.15s;
+    }
+    input[type="range"]::-webkit-slider-thumb:hover { transform: scale(1.2); }
+ 
+    .slider-val {
+      color: #4a9eff;
+      font-size: 13px;
+      font-weight: 700;
+      min-width: 42px;
+      text-align: left;
+      direction: ltr;
+    }
+ 
+    /* Presets */
+    .presets-row {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+ 
+    .preset-dot {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      cursor: pointer;
+      border: 2px solid transparent;
+      transition: all 0.2s;
+      flex-shrink: 0;
+    }
+    .preset-dot:hover, .preset-dot.active { border-color: #fff; transform: scale(1.15); }
+ 
+    /* Divider */
+    .panel-divider {
+      border: none;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      margin: 6px 0 20px;
+    }
+ 
+    /* Toast */
+    .toast {
+      position: fixed;
+      bottom: 28px;
+      left: 50%;
+      transform: translateX(-50%) translateY(80px);
+      background: #22c55e;
+      color: #fff;
+      padding: 10px 22px;
+      border-radius: 100px;
+      font-size: 13px;
+      font-weight: 600;
+      font-family: 'Cairo', sans-serif;
+      box-shadow: 0 4px 20px rgba(34,197,94,0.4);
+      transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+      z-index: 9999;
+      white-space: nowrap;
+      pointer-events: none;
+    }
+    .toast.show { transform: translateX(-50%) translateY(0); }
+  </style>
+</head>
+<body>
+ 
+  <!-- BUTTON SECTION -->
+  <div class="button-section">
+    <div class="call-btn-wrapper">
+      <a href="tel:+966543064111" class="call-btn" id="callBtn">
+        <div class="inner-circle">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.61 21 3 13.39 3 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.25 1.01l-2.2 2.2z"/>
+          </svg>
+        </div>
+      </a>
+      <span class="call-label">اتصل بنا</span>
+    </div>
+  </div>
+ 
+  <!-- CONTROL PANEL -->
+  <div class="control-panel">
+    <div class="panel-title">
+      <i class="fas fa-sliders"></i>
+      لوحة التحكم
+    </div>
+    <hr class="panel-divider">
+ 
+    <div class="controls-grid">
+ 
+      <!-- Button Color -->
+      <div class="control-group">
+        <div class="control-label"><i class="fas fa-circle"></i> لون الزرار</div>
+        <div class="color-row">
+          <div class="color-picker-wrap">
+            <input type="color" id="btnColorPicker" value="#cc0000">
+          </div>
+          <input type="text" class="hex-input" id="btnColorHex" value="#cc0000" maxlength="7" placeholder="#000000">
+          <button class="copy-btn" onclick="copyColor('btnColorHex', this)">
+            <i class="far fa-copy"></i> نسخ
+          </button>
+        </div>
+        <div class="presets-row" style="margin-top:12px;">
+          <div class="preset-dot active" style="background:#cc0000" onclick="applyPreset('btn','#cc0000',this)"></div>
+          <div class="preset-dot" style="background:#e65c00" onclick="applyPreset('btn','#e65c00',this)"></div>
+          <div class="preset-dot" style="background:#d4a017" onclick="applyPreset('btn','#d4a017',this)"></div>
+          <div class="preset-dot" style="background:#16a34a" onclick="applyPreset('btn','#16a34a',this)"></div>
+          <div class="preset-dot" style="background:#2563eb" onclick="applyPreset('btn','#2563eb',this)"></div>
+          <div class="preset-dot" style="background:#7c3aed" onclick="applyPreset('btn','#7c3aed',this)"></div>
+          <div class="preset-dot" style="background:#db2777" onclick="applyPreset('btn','#db2777',this)"></div>
+        </div>
+      </div>
+ 
+      <!-- Shadow Color -->
+      <div class="control-group">
+        <div class="control-label"><i class="fas fa-sun"></i> لون الظل (Glow)</div>
+        <div class="color-row">
+          <div class="color-picker-wrap">
+            <input type="color" id="shadowColorPicker" value="#c80000">
+          </div>
+          <input type="text" class="hex-input" id="shadowColorHex" value="#c80000" maxlength="7" placeholder="#000000">
+          <button class="copy-btn" onclick="copyColor('shadowColorHex', this)">
+            <i class="far fa-copy"></i> نسخ
+          </button>
+        </div>
+        <div class="presets-row" style="margin-top:12px;">
+          <div class="preset-dot active" style="background:#c80000" onclick="applyPreset('shadow','#c80000',this)"></div>
+          <div class="preset-dot" style="background:#ff6600" onclick="applyPreset('shadow','#ff6600',this)"></div>
+          <div class="preset-dot" style="background:#f59e0b" onclick="applyPreset('shadow','#f59e0b',this)"></div>
+          <div class="preset-dot" style="background:#22c55e" onclick="applyPreset('shadow','#22c55e',this)"></div>
+          <div class="preset-dot" style="background:#3b82f6" onclick="applyPreset('shadow','#3b82f6',this)"></div>
+          <div class="preset-dot" style="background:#a855f7" onclick="applyPreset('shadow','#a855f7',this)"></div>
+          <div class="preset-dot" style="background:#ec4899" onclick="applyPreset('shadow','#ec4899',this)"></div>
+        </div>
+      </div>
+ 
+      <!-- Animation Speed -->
+      <div class="control-group">
+        <div class="control-label"><i class="fas fa-gauge-high"></i> سرعة الأنيميشن</div>
+        <div class="slider-row">
+          <div class="slider-wrap">
+            <input type="range" id="speedSlider" min="0.5" max="5" step="0.1" value="2">
+          </div>
+          <span class="slider-val" id="speedVal">2.0s</span>
+        </div>
+      </div>
+ 
+      <!-- Pulse Size -->
+      <div class="control-group">
+        <div class="control-label"><i class="fas fa-expand"></i> حجم النبضة (Pulse)</div>
+        <div class="slider-row">
+          <div class="slider-wrap">
+            <input type="range" id="pulseSlider" min="5" max="40" step="1" value="22">
+          </div>
+          <span class="slider-val" id="pulseVal">22px</span>
+        </div>
+      </div>
+ 
+      <!-- Button Size -->
+      <div class="control-group">
+        <div class="control-label"><i class="fas fa-circle-dot"></i> حجم الزرار</div>
+        <div class="slider-row">
+          <div class="slider-wrap">
+            <input type="range" id="sizeSlider" min="60" max="160" step="5" value="100">
+          </div>
+          <span class="slider-val" id="sizeVal">100px</span>
+        </div>
+      </div>
+ 
+      <!-- Icon Size -->
+      <div class="control-group">
+        <div class="control-label"><i class="fas fa-font"></i> حجم الأيقونة</div>
+        <div class="slider-row">
+          <div class="slider-wrap">
+            <input type="range" id="iconSlider" min="16" max="80" step="2" value="46">
+          </div>
+          <span class="slider-val" id="iconVal">46px</span>
+        </div>
+      </div>
+ 
+    </div>
+  </div>
+ 
+  <!-- Toast -->
+  <div class="toast" id="toast">✓ تم النسخ!</div>
+ 
+  <script>
+    const root = document.documentElement;
+    const btn = document.getElementById('callBtn');
+ 
+    // ─── Color pickers ───────────────────────────────────────────
+    function hexToRgba(hex, alpha) {
+      let r = parseInt(hex.slice(1,3),16);
+      let g = parseInt(hex.slice(3,5),16);
+      let b = parseInt(hex.slice(5,7),16);
+      return `rgba(${r},${g},${b},${alpha})`;
+    }
+ 
+    function isValidHex(h) { return /^#[0-9a-fA-F]{6}$/.test(h); }
+ 
+    // Button color
+    const btnPicker = document.getElementById('btnColorPicker');
+    const btnHex    = document.getElementById('btnColorHex');
+ 
+    btnPicker.addEventListener('input', () => {
+      btnHex.value = btnPicker.value;
+      applyBtnColor(btnPicker.value);
+    });
+    btnHex.addEventListener('input', () => {
+      const v = btnHex.value.startsWith('#') ? btnHex.value : '#' + btnHex.value;
+      if (isValidHex(v)) { btnPicker.value = v; applyBtnColor(v); }
+    });
+ 
+    function applyBtnColor(hex) {
+      root.style.setProperty('--btn-color', hex);
+    }
+ 
+    // Shadow color
+    const shadowPicker = document.getElementById('shadowColorPicker');
+    const shadowHex    = document.getElementById('shadowColorHex');
+ 
+    shadowPicker.addEventListener('input', () => {
+      shadowHex.value = shadowPicker.value;
+      applyShadowColor(shadowPicker.value);
+    });
+    shadowHex.addEventListener('input', () => {
+      const v = shadowHex.value.startsWith('#') ? shadowHex.value : '#' + shadowHex.value;
+      if (isValidHex(v)) { shadowPicker.value = v; applyShadowColor(v); }
+    });
+ 
+    function applyShadowColor(hex) {
+      root.style.setProperty('--shadow-color', hexToRgba(hex, 0.65));
+      rebuildKeyframes(hex);
+    }
+ 
+    // Rebuild @keyframes dynamically with new shadow color
+    let kfStyle = document.createElement('style');
+    document.head.appendChild(kfStyle);
+ 
+    function rebuildKeyframes(hex) {
+      const min = getComputedStyle(root).getPropertyValue('--pulse-min').trim();
+      const max = getComputedStyle(root).getPropertyValue('--pulse-max').trim();
+      kfStyle.textContent = `
+        @keyframes pulse-shadow {
+          0%   { box-shadow: 0 0 5px ${min} ${hexToRgba(hex,0.65)}, 0 0 0 ${min} ${hexToRgba(hex,0.35)}; }
+          50%  { box-shadow: 0 0 5px ${max} ${hexToRgba(hex,0.65)}, 0 0 0 ${max} ${hexToRgba(hex,0.35)}; }
+          100% { box-shadow: 0 0 5px ${min} ${hexToRgba(hex,0.65)}, 0 0 0 ${min} ${hexToRgba(hex,0.35)}; }
+        }
+      `;
+    }
+ 
+    // ─── Presets ──────────────────────────────────────────────────
+    function applyPreset(type, hex, el) {
+      if (type === 'btn') {
+        btnPicker.value = hex; btnHex.value = hex; applyBtnColor(hex);
+        document.querySelectorAll('.control-group:nth-child(1) .preset-dot').forEach(d => d.classList.remove('active'));
+      } else {
+        shadowPicker.value = hex; shadowHex.value = hex; applyShadowColor(hex);
+        document.querySelectorAll('.control-group:nth-child(2) .preset-dot').forEach(d => d.classList.remove('active'));
+      }
+      el.classList.add('active');
+    }
+ 
+    // ─── Sliders ──────────────────────────────────────────────────
+    const speedSlider = document.getElementById('speedSlider');
+    const speedVal    = document.getElementById('speedVal');
+    speedSlider.addEventListener('input', () => {
+      const v = parseFloat(speedSlider.value).toFixed(1);
+      speedVal.textContent = v + 's';
+      root.style.setProperty('--anim-speed', v + 's');
+    });
+ 
+    const pulseSlider = document.getElementById('pulseSlider');
+    const pulseVal    = document.getElementById('pulseVal');
+    pulseSlider.addEventListener('input', () => {
+      const v = pulseSlider.value;
+      const min = Math.max(4, Math.round(v * 0.45));
+      pulseVal.textContent = v + 'px';
+      root.style.setProperty('--pulse-min', min + 'px');
+      root.style.setProperty('--pulse-max', v + 'px');
+      rebuildKeyframes(shadowPicker.value);
+    });
+ 
+    const sizeSlider = document.getElementById('sizeSlider');
+    const sizeVal    = document.getElementById('sizeVal');
+    sizeSlider.addEventListener('input', () => {
+      sizeVal.textContent = sizeSlider.value + 'px';
+      root.style.setProperty('--btn-size', sizeSlider.value + 'px');
+    });
+ 
+    const iconSlider = document.getElementById('iconSlider');
+    const iconVal    = document.getElementById('iconVal');
+    iconSlider.addEventListener('input', () => {
+      iconVal.textContent = iconSlider.value + 'px';
+      // icon-size controls the SVG dimensions inside the inner circle
+      root.style.setProperty('--icon-size', iconSlider.value + 'px');
+    });
+ 
+    // ─── Copy helpers ─────────────────────────────────────────────
+    function copyColor(inputId, btn) {
+      const val = document.getElementById(inputId).value;
+      navigator.clipboard.writeText(val).then(() => {
+        btn.classList.add('copied');
+        btn.innerHTML = '<i class="fas fa-check"></i> تم';
+        showToast('تم نسخ اللون: ' + val);
+        setTimeout(() => {
+          btn.classList.remove('copied');
+          btn.innerHTML = '<i class="far fa-copy"></i> نسخ';
+        }, 2000);
+      });
+    }
+ 
+    function showToast(msg) {
+      const t = document.getElementById('toast');
+      t.textContent = '✓ ' + msg;
+      t.classList.add('show');
+      setTimeout(() => t.classList.remove('show'), 2500);
+    }
+ 
+    // Init keyframes
+    rebuildKeyframes(shadowPicker.value);
+  </script>
+</body>
+</html>
+ 
